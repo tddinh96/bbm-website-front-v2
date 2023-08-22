@@ -13,14 +13,14 @@ export function MainNavStatic({
     
     const routes =[
         {
-            href: `/storages/`,
+            href: `/storage/`,
             label: 'Storage',
-            active: pathname === `/storages`,
+            active: pathname === `/storage`,
         },
         {
-            href: `/${params.storeId}/billboards`,
+            href: `/launch/`,
             label: 'Launch',
-            active: pathname === `/${params.storeId}/billboards`,
+            active: pathname === `/launch`,
         },
         {
             href: `/${params.storeId}/homepageFeatures`,
