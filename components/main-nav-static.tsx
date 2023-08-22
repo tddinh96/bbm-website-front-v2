@@ -15,7 +15,7 @@ export function MainNavStatic({
         {
             href: `/storages/`,
             label: 'Storage',
-            active: pathname === `/storages/`,
+            active: pathname === `/storages`,
         },
         {
             href: `/${params.storeId}/billboards`,
@@ -43,7 +43,7 @@ export function MainNavStatic({
                     href ={route.href}
                     className={cn(
                         "text-sm font-medium transition-colors hover:text-primary",
-                        route.active ? "text-black dark:text-white" : "text-muted-foreground"
+                        route.active ? "text-black dark:text-blue-700" : "text-muted-foreground"
                     )}
                 >
                     {route.label}
