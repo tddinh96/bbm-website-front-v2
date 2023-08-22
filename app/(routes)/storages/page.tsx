@@ -75,14 +75,14 @@ const Storages = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <Image
-            src="/images/covered-slip.jpg"
+            src="/images/dry-storage-2.jpg"
             width={500}
             height={500}
             alt="Uncovered boat slip."
             className="rounded-lg bg-gray-100"
           />
           <Image
-            src="/images/dry-storage-2.jpg"
+            src="/images/covered-slip.jpg"
             width={500}
             height={500}
             alt="Top down view of walnut card tray with embedded magnets and card groove."
