@@ -12,7 +12,7 @@ const Storages = () => {
         return null;
     }
     return ( 
-        <div>Storage Pages v2 - WIP- This is my starting page</div>
+        <div>Storage Pages v2 - WIP- This is my starting page - clean</div>
      );
 }
  
