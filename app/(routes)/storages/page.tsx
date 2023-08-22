@@ -37,7 +37,7 @@ const Storages = () => {
       <div className="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-4 gap-y-16 px-4 py-24 sm:px-6 sm:py-12 lg:max-w-7xl lg:grid-cols-1 lg:px-8">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Storages
+            Storage
           </h2>
           <p className="mt-4 text-gray-500">
             Find your sanctuary at Big Break Marina, where we offer fortified
@@ -75,14 +75,14 @@ const Storages = () => {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
           <Image
-            src="/images/dry-storage-2.jpg"
+            src="/images/covered-slip.jpg"
             width={500}
             height={500}
             alt="Uncovered boat slip."
             className="rounded-lg bg-gray-100"
           />
           <Image
-            src="/images/covered-slip.jpg"
+            src="/images/dry-storage-2.jpg"
             width={500}
             height={500}
             alt="Top down view of walnut card tray with embedded magnets and card groove."
