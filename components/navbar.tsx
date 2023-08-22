@@ -4,19 +4,20 @@ import MainNav from "@/components/main-nav";
 import Container from "@/components/ui/container";
 import NavbarActions from "@/components/navbar-actions";
 import getCategories from "@/actions/get-categories";
-import {MainNavStatic}  from "@/components/main-nav-static";
+import { MainNavStatic } from "@/components/main-nav-static";
 
 const Navbar = async () => {
   const categories = await getCategories();
 
-  return ( 
+  return (
     <div className="border-b">
       <Container>
-        <div className="relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+        {/* Use flex-col and sm:flex-row to break the elements into multiple row when the screen size is small */}
+        <div className="relative px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row h-16 items-center">
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
             <p className="font-bold text-xl">Home</p>
           </Link>
-          <MainNavStatic className="mx-6"/>
+          <MainNavStatic className="mx-6" />
           <MainNav data={categories} />
           <NavbarActions />
         </div>
@@ -24,5 +25,5 @@ const Navbar = async () => {
     </div>
   );
 };
- 
+
 export default Navbar;
