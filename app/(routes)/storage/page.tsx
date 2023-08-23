@@ -7,13 +7,15 @@ const Storages = () => {
     {
       name: "Dry Storage",
       description: "Pricing is based on monthly rate",
-      prices: ["Up to 29 fet in length: $95", "Above 30 ft: $200",
-    "If you have a slip you will you get $50 discount to store your trailer*"],
+      prices: [
+        "Up to 29 fet in length: $95",
+        "Above 30 ft: $200",
+        "If you have a slip you will you get $50 discount to store your trailer*",
+      ],
     },
     {
       name: "Uncovered / Covered Slips",
-      description:
-        "Pricing is based on monthly rate",
+      description: "Pricing is based on monthly rate",
       prices: [
         "Up to 20 ft in length: $125.00",
         "20 ft to 23 ft in length: $135.00",
@@ -73,19 +75,29 @@ const Storages = () => {
             ))}
           </dl>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 grid-rows-1 gap-4 sm:gap-6 lg:gap-8">
           <Image
             src="/images/covered-slip.jpg"
             width={500}
             height={500}
-            alt="Uncovered boat slip."
+            alt="A view of a covered slip."
             className="rounded-lg bg-gray-100"
           />
           <Image
-            src="/images/dry-storage-2.jpg"
+            src="/images/dry-storage-2.jpeg"
             width={500}
             height={500}
-            alt="Top down view of walnut card tray with embedded magnets and card groove."
+            alt="A view of dry storage."
+            className="rounded-lg bg-gray-100"
+          />
+        </div>
+        {/* Maps */}
+        <div className="grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-8">
+        <Image
+            src="/images/dry-storage-v2_new.jpeg"
+            width={1000}
+            height={1000}
+            alt="A map of dry storage."
             className="rounded-lg bg-gray-100"
           />
         </div>

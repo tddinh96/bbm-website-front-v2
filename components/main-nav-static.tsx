@@ -23,9 +23,9 @@ export function MainNavStatic({
             active: pathname === `/launch`,
         },
         {
-            href: `/${params.storeId}/homepageFeatures`,
-            label: 'Campground',
-            active: pathname === `/${params.storeId}/homepageFeatures`,
+            href: `/map/`,
+            label: 'Map',
+            active: pathname === `/map`,
         },
         {
             href: `/${params.storeId}/categories`,
