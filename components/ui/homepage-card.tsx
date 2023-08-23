@@ -36,7 +36,7 @@ const HomepageCard: React.FC<HomepageCard> = ({
     }
 
     return (
-        <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
+        <div className="bg-white group rounded-xl border p-3 space-y-4">
             {/*Images and Actions*/}
             <div className="aspect-square rounded-xl bg-gray-100 relative">
                 <Image 
@@ -45,7 +45,7 @@ const HomepageCard: React.FC<HomepageCard> = ({
                     src={data?.imageUrl}
                     className="aspect-square object-cover rounded-md"
                 />
-                <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
+                {/* <div className="opacity-0 group-hover:opacity-100 transition absolute w-full px-6 bottom-5">
                     <div className="flex gap-x-6 justify-center">
                         <IconButton 
                             onClick={onPreview}
@@ -56,7 +56,7 @@ const HomepageCard: React.FC<HomepageCard> = ({
                             icon={<ShoppingCart size={20} className="text-gray-600" />}
                         />
                     </div>
-                </div>
+                </div> */}
             </div>
             {/* Description */}
             <div>

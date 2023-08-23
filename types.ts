@@ -44,4 +44,11 @@ export interface HomepageFeature {
   content: string;
   imageUrl: string;
   images: Image[];
+};
+
+export interface Map {
+  id: string;
+  title: string;
+  imageUrl: string;
+  images: Image[];
 }

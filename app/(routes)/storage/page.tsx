@@ -1,8 +1,25 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import MapList from "@/components/map-list";
+// import getMaps from "@/actions/get-maps";
 
 const Storages = () => {
+  const Maps = [
+    {
+      id: "b922a583-e435-44e4-a01d-b326cca488ed",
+      title: "Marina Dry Storage Map",
+      imageUrl:
+        "https://res.cloudinary.com/dgih5kfqr/image/upload/v1692764083/e9xctwbzdoptitcqls4i.jpg",
+    },
+    {
+      id: "78230aae-6678-4e25-bf73-467480490ec9",
+      title: "Marina Slip Map ",
+      imageUrl:
+        "https://res.cloudinary.com/dgih5kfqr/image/upload/v1692763937/ygl8tzhhw7yxssxxuarb.jpg",
+    },
+  ];
+
   const features = [
     {
       name: "Dry Storage",
@@ -92,12 +109,19 @@ const Storages = () => {
           />
         </div>
         {/* Maps */}
-        <div className="grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-8">
-        <Image
-            src="/images/dry-storage-v2_new.jpeg"
-            width={1000}
-            height={1000}
-            alt="A map of dry storage."
+        <div className="grid grid-cols-2 gap-y-8 px-4 sm:px-6 lg:px-8">
+          <Image
+            src={Maps[0].imageUrl}
+            width={500}
+            height={500}
+            alt="A view of dry storage."
+            className="rounded-lg bg-gray-100"
+          />
+          <Image
+            src={Maps[1].imageUrl}
+            width={500}
+            height={500}
+            alt="A view of dry storage."
             className="rounded-lg bg-gray-100"
           />
         </div>
