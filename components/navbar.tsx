@@ -19,7 +19,7 @@ const Navbar = async () => {
           </Link>
           <MainNavStatic className="mx-6" />
           <MainNav data={categories} />
-          <NavbarActions />
+          {/* <NavbarActions /> */}
         </div>
       </Container>
     </div>
