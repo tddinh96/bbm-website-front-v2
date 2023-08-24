@@ -28,9 +28,9 @@ export function MainNavStatic({
             active: pathname === `/unit-rental`,
         },
         {
-            href: `/${params.storeId}/categories`,
+            href: `/event-page/`,
             label: 'Event',
-            active: pathname === `/${params.storeId}/categories`,
+            active: pathname === `/event-page`,
         },
         {
             href: `/accessibility`,
