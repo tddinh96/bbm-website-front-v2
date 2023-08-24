@@ -24,7 +24,7 @@ export function MainNavStatic({
         },
         {
             href: `/unit-rental/`,
-            label: 'Unit Rentals',
+            label: 'Unit Rental',
             active: pathname === `/unit-rental`,
         },
         {
@@ -47,7 +47,7 @@ export function MainNavStatic({
                     key={route.href}
                     href ={route.href}
                     className={cn(
-                        "text-sm font-medium transition-colors hover:text-primary",
+                        "text-lg font-medium transition-colors hover:text-primary",
                         route.active ? "text-black dark:text-blue-700" : "text-muted-foreground"
                     )}
                 >
