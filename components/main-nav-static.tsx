@@ -32,6 +32,11 @@ export function MainNavStatic({
             label: 'Event',
             active: pathname === `/${params.storeId}/categories`,
         },
+        {
+            href: `/accessibility`,
+            label: 'Accessibility',
+            active: pathname === `/accessibility`,
+        },
     ];
     return(
         <nav

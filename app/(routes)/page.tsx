@@ -5,7 +5,7 @@ import Container from "@/components/ui/container";
 import ProductList from "@/components/product-list";
 import getHomepageFeatures from "@/actions/get-homepage-features";
 import HomepageFeatureList from "@/components/homepage-list";
-import MapList from "@/components/map-list";
+// import MapList from "@/components/map-list";
 import getMaps from "@/actions/get-maps";
 
 export const revalidate = 0;
