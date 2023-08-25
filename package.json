@@ -37,6 +37,7 @@
     "zustand": "^4.4.1"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "prisma": "^5.2.0"
   }
 }
