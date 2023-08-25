@@ -25,7 +25,7 @@ const HomePage = async () => {
                 <ProductList title="Featured Products" items ={products} />
             </div>
             <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
-                <HomepageFeatureList title="Features" items={features} content={features} />
+                <HomepageFeatureList title="What we offer" items={features} content={features} />
             </div>
             {/* <div className="flex flex-col gap-y-8 px-4 sm:px-6 lg:px-8">
                 <MapList title="Marina Maps" items ={maps} />

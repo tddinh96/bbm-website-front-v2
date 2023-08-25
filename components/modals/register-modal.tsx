@@ -11,6 +11,7 @@ import Heading from "@/components/heading";
 import Input from "@/components/inputs/input";
 import { toast } from "react-hot-toast";
 import Button from "@/components/button";
+import { Facebook } from "lucide-react";
 
 const RegisterModal = () => {
   const registerModal = useRegisterModal();
@@ -92,6 +93,12 @@ const RegisterModal = () => {
         icon={AiFillGithub}
         onClick={() => {}}
       />
+      <Button
+        outline
+        label="Continue with Facebook"
+        icon={Facebook}
+        onClick={() => {}}
+      />
       <div
         className="
           text-neutral-500
@@ -101,10 +108,11 @@ const RegisterModal = () => {
         "
       >
         <div className=" justify-center flex flex-row items-center gap-2">
-          <div>
-            Already have an account?
-          </div>
-          <div onClick={registerModal.onClose} className="text-neutral-800 cursor-pointer hover:underline">
+          <div>Already have an account?</div>
+          <div
+            onClick={registerModal.onClose}
+            className="text-neutral-800 cursor-pointer hover:underline"
+          >
             Login
           </div>
         </div>
