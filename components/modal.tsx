@@ -1,3 +1,0 @@
-interface ModalProps {
-    isOpen?: boolean
-}

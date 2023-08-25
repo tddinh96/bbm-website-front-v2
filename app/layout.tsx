@@ -7,6 +7,9 @@ import Footer from '@/components/footer'
 import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css'
+import Modal from '@/components/modals/modal'
+import ClientOnly from '@/components/client-only'
+import RegisterModal from '@/components/modals/register-modal'
 
 const font = Nunito({ subsets: ['latin'] })
 
@@ -25,6 +28,10 @@ export default function RootLayout({
       <body className={font.className}>
         <ToastProvider />
         <ModalProvider />
+        <ClientOnly>
+        {/* <Modal title='Hello' actionLabel='Submit' isOpen/> */}
+        <RegisterModal />
+        </ClientOnly>
         <Navbar />
         {children}
         <Analytics />

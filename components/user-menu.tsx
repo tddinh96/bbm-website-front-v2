@@ -8,8 +8,10 @@ import Button from "@/components/ui/button";
 import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "@/components/avatar";
 import MenuItem from "@/components/menu-item";
+import useRegisterModal from "@/hooks/use-register-modal";
 
 const UserMenu = () => {
+  const registerModal = useRegisterModal();
   // Set the default state for isOpen to false
   const [isOpen, setIsOpen] = useState(false);
   // Reverse the state to the opposite state
@@ -62,7 +64,7 @@ const UserMenu = () => {
             <div className="flex flex-col cursor-pointer">
               <>
                 <MenuItem onClick={() => {}} label="Login" />
-                <MenuItem onClick={() => {}} label="Sign up" />
+                <MenuItem onClick={registerModal.onOpen} label="Sign up" />
                 <MenuItem onClick={() => {}} label="Logout" />
               </>
             </div>
