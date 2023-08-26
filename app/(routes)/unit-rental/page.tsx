@@ -41,7 +41,7 @@ const UnitRental = () => {
         <div className="px-4 py-10 sm:px-6 lg:px-8">
           <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
             <Tab.Group as="div" className="flex flex-col-reverse">
-              <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+              <div className="mx-auto mt-6 w-full max-w-2xl sm:block lg:max-w-none">
                 <Tab.List className="grid grid-cols-4 gap-6">
                   {unitRentals.images.map((image) => (
                     <GalleryTab key={image.id} image={image} />
