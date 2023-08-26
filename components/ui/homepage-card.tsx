@@ -60,10 +60,10 @@ const HomepageCard: React.FC<HomepageCard> = ({
             </div>
             {/* Description */}
             <div>
-                <p className="font-semibold text-xl">
+                <p className="font-bold text-xl">
                     {data.title}
                 </p>
-                <p className="text-base text-gray-500">
+                <p className="text-lg text-gray-900 mt-6">
                     {data.content}
                 </p>
             </div>

@@ -77,7 +77,7 @@ const EventPage = () => {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Events
           </h2>
-          <p className="mt-4 text-gray-500">
+          <p className="mt-4 text-gray-900 text-lg">
             Welcome to Big Break Marina – Your Premier Event Destination!
             Nestled along the picturesque waters of the delta, our marina offers
             the perfect setting for hosting a wide range of events, from
@@ -98,7 +98,7 @@ const EventPage = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Past Events
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <p className="mt-2 text-lg leading-8 text-gray-900">
               We are proudly to hold these events
             </p>
           </div>
@@ -129,13 +129,13 @@ const EventPage = () => {
                   </a>
                 </div>
                 <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                  <h3 className="mt-3 text-xl font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
                     <a href={post.href}>
                       <span className="absolute inset-0" />
                       {post.title}
                     </a>
                   </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+                  <p className="mt-5 line-clamp-3 text-lg leading-6 text-gray-600">
                     {post.description}
                   </p>
                 </div>

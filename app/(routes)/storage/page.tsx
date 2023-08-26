@@ -58,7 +58,7 @@ const Storages = () => {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Storage
           </h2>
-          <p className="mt-4 text-gray-500">
+          <p className="mt-4 text-lg text-gray-900">
             Find your sanctuary at Big Break Marina, where we offer fortified
             dry storage for trailers and sheltered berths for boats. Our mission
             is to shield your valuable investment from the elements, providing
@@ -76,14 +76,14 @@ const Storages = () => {
                 <h3 className="text-md font-bold tracking-tight text-gray-900 sm:text-3xl">
                   {feature.name}
                 </h3>
-                <dd className="mt-2 text-sm text-gray-500">
+                <dd className="mt-2 text-xl text-gray-800">
                   {feature.description}
                 </dd>
                 <div className="mt-4">
                   <ul role="list" className="list-disc space-y-2 pl-4 text-sm">
                     {feature.prices.map((price) => (
-                      <li key={price} className="text-gray-400">
-                        <span className="text-gray-600">{price}</span>
+                      <li key={price} className="text-gray-900 text-lg">
+                        <span className="text-gray-700">{price}</span>
                       </li>
                     ))}
                   </ul>

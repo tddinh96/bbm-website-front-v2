@@ -49,7 +49,7 @@ const LaunchPage = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Launch Ramp
             </h2>
-            <p className="mt-4 text-gray-500">
+            <p className="mt-4 text-gray-900 text-lg">
               Set sail effortlessly with Big Break Marina boat launch ramp. Our
               well-maintained ramp provides seamless access to the water,
               allowing you to embark on your boating adventures with ease.
@@ -64,7 +64,7 @@ const LaunchPage = () => {
                   <h3 className="text-md font-bold tracking-tight text-gray-900 sm:text-3xl">
                     {feature.name}
                   </h3>
-                  <dd className="mt-2 text-sm text-gray-500">
+                  <dd className="mt-2 text-xl text-gray-800">
                     {feature.title}
                   </dd>
                   <div className="mt-4">
@@ -73,7 +73,7 @@ const LaunchPage = () => {
                       className="list-disc space-y-2 pl-4 text-sm"
                     >
                       {feature.instructions.map((instruction) => (
-                        <li key={instruction} className="text-gray-400">
+                        <li key={instruction} className="text-gray-700 text-lg">
                           <span className="text-gray-600">{instruction}</span>
                         </li>
                       ))}
