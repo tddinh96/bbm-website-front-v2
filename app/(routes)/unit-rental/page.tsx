@@ -10,10 +10,13 @@ import { Image } from "@/types";
 
 import GalleryTab from "@/components/unit-gallery/gallery-tab";
 
+
 const unitRentals = {
   name: "99 Big Break Road, Oakley, CA 94561",
+  price: "$2,500",
   description:
     "Spacious single level home on the water is available for rent. Located at the heart of Big Break Marina, the unit comes with a spacious living room and kitchen attached, features granite countertops and island. Large sliding door leads to the open water. Laundry area with washer and dryer hook up. Community amenities include launch ramp and picnic areas. Finished yard space and garden. New window coverings. Covered patio",
+  applyUrl: "https://turbo.rent/s/1262094p",
   details: [{ type: "Cottage" }, { size: "925 SF" }],
   amenities: [
     "Central Heat and AC",
@@ -26,11 +29,10 @@ const unitRentals = {
     "By the water",
   ],
   images: [
-    { id: "1", url: "/images/launchramp.jpeg" },
-    { id: "2", url: "/images/bbm-dawn.jpeg" },
-    { id: "3", url: "/images/covered-slip.jpg" },
-    { id: "4", url: "/images/covered-slip.jpg" },
-    { id: "5", url: "/images/covered-slip.jpg" },
+    { id: "1", url: "/images/unit-99/ext-1.jpeg" },
+    { id: "2", url: "/images/unit-99/ext-2.jpeg" },
+    { id: "3", url: "/images/unit-99/int-1.jpeg" },
+    { id: "4", url: "/images/unit-99/int-2.jpeg" },
   ],
 };
 
@@ -39,7 +41,7 @@ const UnitRental = () => {
     <div className="bg-white">
       <Container>
         <div className="px-4 py-10 sm:px-6 lg:px-8">
-          <div className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
+          <div id="fixed-here" className="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
             <Tab.Group as="div" className="flex flex-col-reverse">
               <div className="mx-auto mt-6 w-full max-w-2xl sm:block lg:max-w-none">
                 <Tab.List className="grid grid-cols-4 gap-6">
@@ -67,6 +69,10 @@ const UnitRental = () => {
               <div>
                 <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   {unitRentals.name}
+                  <br />
+                  <div className="text-2xl">
+                  {unitRentals.price}
+                  </div>
                 </h2>
                 <p className="mt-8 text-lg text-gray-900">{unitRentals.description}</p>
               </div>
@@ -100,9 +106,13 @@ const UnitRental = () => {
               </dl>
               <hr className="my-10" />
               <h3 className="text-md font-bold tracking-tight text-gray-900 sm:text-3xl">
-                Contacts go here
+                Contact Us
               </h3>
-              <p>Hello Contacts</p>
+              <div className="mt-4 text-lg">
+              <p>Big Break Marina</p>
+              <p>925-679-0900</p>
+              <p>info@bigbreakmarina.com</p>
+              </div>
             </div>
           </div>
         </div>
